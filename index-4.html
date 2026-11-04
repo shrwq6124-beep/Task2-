@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إزاي المواقع بتتفاعل مع ضغطات المستخدم</title>
+  <style>
+    body { font-family: Tahoma, Arial, sans-serif; line-height: 1.9; margin: 0; background: #f4f7fb; color: #243247; }
+    header, main, footer { max-width: 950px; margin: auto; padding: 24px; }
+    header { background: #174a75; color: white; border-radius: 0 0 16px 16px; }
+    h1 { margin-top: 0; }
+    h2 { color: #176b9a; border-bottom: 2px solid #d8e7f2; padding-bottom: 8px; }
+    h3 { color: #315d7a; }
+    .student { background: #e5f1f8; padding: 12px 18px; border-radius: 10px; }
+    img { display: block; max-width: 100%; width: 650px; height: auto; margin: 20px auto; border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; background: white; margin: 18px 0; }
+    th, td { border: 1px solid #9eb5c6; padding: 10px; text-align: right; }
+    th { background: #dcecf6; }
+    a { color: #075d9b; }
+    footer { color: #586a79; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>إزاي المواقع بتتفاعل مع ضغطات المستخدم</h1>
+    <p><strong>اسم الطالبة:</strong> شروق إبراهيم سعيد</p>
+    <p><strong>الفرقة:</strong> الثانية</p>
+    <p><strong>الرقم الجامعي:</strong> 2503562</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1- المقدمة</h2>
+      <p>أصبحت مواقع الويب جزءًا أساسيًا من حياتنا اليومية؛ فنحن نستخدمها للتعلم والتسوق والتواصل الاجتماعي ومشاهدة الفيديوهات وإجراء المعاملات المختلفة. وتعتمد هذه المواقع على التفاعل مع المستخدم، مثل الضغط على الأزرار، وفتح القوائم، وإرسال النماذج، والبحث عن المعلومات.</p>
+      <p>تعتمد عملية التفاعل على مجموعة من التقنيات واللغات البرمجية، أهمها <strong>HTML وCSS وJavaScript</strong>، بالإضافة إلى متصفح الويب الذي يستقبل الأحداث وينفذ التعليمات المناسبة. يهدف هذا التقرير إلى توضيح كيفية تفاعل مواقع الويب مع ضغطات المستخدم والمراحل التي تحدث داخل المتصفح.</p>
+      <img src="click-interaction.jpg" alt="رسم توضيحي لمستخدم يضغط على زر Click في صفحة ويب">
+    </section>
+
+    <section>
+      <h2>2- ما المقصود بتفاعل مواقع الويب مع المستخدم؟</h2>
+      <p>تفاعل مواقع الويب هو قدرة الموقع على استقبال أفعال المستخدم والاستجابة لها بطريقة محددة. ومن أمثلة هذه الأفعال:</p>
+      <ul>
+        <li>الضغط على زر تسجيل الدخول.</li>
+        <li>النقر على صورة لعرضها بحجم أكبر.</li>
+        <li>كتابة كلمة في مربع البحث.</li>
+        <li>فتح قائمة جانبية أو إرسال نموذج يحتوي على بيانات.</li>
+        <li>الضغط على زر الإعجاب أو إضافة منتج إلى سلة التسوق.</li>
+      </ul>
+      <p>عندما يضغط المستخدم على زر، يستقبل المتصفح الفعل باعتباره حدثًا (Event)، ثم يمكن لبرنامج مكتوب بلغة JavaScript التعامل معه وتنفيذ الإجراء المطلوب.</p>
+    </section>
+
+    <section>
+      <h2>3- التقنيات المسؤولة عن تفاعل المواقع</h2>
+      <h3>أولًا: HTML — بناء الصفحة</h3>
+      <p>تُستخدم لإنشاء عناصر الصفحة، مثل الأزرار والروابط والصور ومربعات الكتابة والنماذج، وهي التي تحدد العناصر التي يستطيع المستخدم التفاعل معها.</p>
+      <h3>ثانيًا: CSS — تنسيق الصفحة</h3>
+      <p>تُستخدم لتحديد الألوان والخطوط والأحجام والمسافات وشكل الأزرار، كما تساعد في إظهار التأثيرات البصرية.</p>
+      <h3>ثالثًا: JavaScript — إضافة التفاعل</h3>
+      <p>هي اللغة التي تمكّن الصفحة من الاستجابة لأفعال المستخدم، مثل عرض رسالة وتغيير المحتوى والتحقق من البيانات وفتح القوائم وإغلاقها.</p>
+      <table>
+        <tr><th>التقنية</th><th>وظيفتها الأساسية</th><th>مثال</th></tr>
+        <tr><td><strong>HTML</strong></td><td>إنشاء عناصر الصفحة</td><td>زر أو رابط أو نموذج</td></tr>
+        <tr><td><strong>CSS</strong></td><td>تنسيق شكل العناصر</td><td>لون الزر وحجمه</td></tr>
+        <tr><td><strong>JavaScript</strong></td><td>الاستجابة لأفعال المستخدم</td><td>إظهار رسالة عند الضغط</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>4- ماذا يحدث عندما يضغط المستخدم على زر؟</h2>
+      <ol>
+        <li><strong>حدوث الضغط:</strong> يضغط المستخدم على زر باستخدام الماوس أو اللمس أو لوحة المفاتيح.</li>
+        <li><strong>اكتشاف الحدث:</strong> يتعرف المتصفح على التفاعل ويُنشئ حدثًا مثل <code>click</code>.</li>
+        <li><strong>استقبال الحدث:</strong> يكون المبرمج قد ربط العنصر بدالة تستمع إلى الحدث، باستخدام وسيلة مثل <code>addEventListener()</code>.</li>
+        <li><strong>تنفيذ الأوامر:</strong> تعمل الدالة المكتوبة بلغة JavaScript وتنفذ التعليمات المحددة.</li>
+        <li><strong>تحديث الصفحة:</strong> قد تتغير البيانات أو تظهر رسالة أو تُفتح قائمة أو يتغير شكل أحد العناصر.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>5- كيف تستقبل JavaScript ضغطات المستخدم؟</h2>
+      <p>تستخدم JavaScript طريقة تسمى <code>addEventListener()</code> لربط عنصر بحدث معين وتحديد الدالة التي ستعمل عند وقوع الحدث. المثال التالي يعرض رسالة عند الضغط على الزر:</p>
+      <p><button id="myButton" type="button">اضغط هنا</button></p>
+      <p id="message" aria-live="polite"></p>
+      <script>
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+        button.addEventListener("click", function () {
+          message.textContent = "تم الضغط على الزر بنجاح!";
+        });
+      </script>
+    </section>
+
+    <section>
+      <h2>6- كيف تتعامل المواقع مع الضغطات داخل العناصر المتداخلة؟</h2>
+      <p>قد تحتوي صفحة الويب على زر داخل صندوق، والصندوق داخل قسم أكبر. عند الضغط على الزر، يمكن أن ينتقل الحدث إلى العناصر المحيطة به، وهي آلية تُسمى <strong>انتشار الحدث (Event Propagation)</strong>.</p>
+      <ul>
+        <li><strong>Event Capturing:</strong> ينتقل الحدث من العناصر الخارجية باتجاه العنصر المستهدف.</li>
+        <li><strong>Event Bubbling:</strong> ينتقل الحدث من العنصر المستهدف إلى العناصر الأب، إذا كان الحدث يدعم الانتشار.</li>
+        <li><strong>Event Target:</strong> العنصر الذي وقع عليه الحدث في الأصل.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7- المراجع</h2>
+      <p>تم إعداد محتوى التقرير اعتمادًا على التقرير البحثي المرفق، مع الاستعانة بالمراجع التقنية التالية لتوضيح مفاهيم HTML وأحداث JavaScript:</p>
+      <ul>
+        <li>التقرير البحثي للطالبة: «إزاي المواقع بتتفاعل مع ضغطات المستخدم» (المرفق في Task 1).</li>
+        <li><a href="https://developer.mozilla.org/ar/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs — توثيق HTML</a>.</li>
+        <li><a href="https://developer.mozilla.org/ar/docs/Web/API/EventTarget/addEventListener" target="_blank" rel="noopener">MDN Web Docs — addEventListener()</a>.</li>
+        <li><a href="https://developer.mozilla.org/ar/docs/Web/API/Event" target="_blank" rel="noopener">MDN Web Docs — Event</a>.</li>
+      </ul>
+    </section>
+  </main>
+  <footer><p>صفحة ويب تعليمية لمقرر تطبيقات الإنترنت والمنصات الإلكترونية — Task 2.</p></footer>
+</body>
+</html>
